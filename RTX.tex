@@ -1,0 +1,99 @@
+\documentclass{article}[11pt]
+\usepackage[T1]{fontenc}
+\usepackage{fouriernc}
+\usepackage{setspace}
+\usepackage[spanish]{babel}
+\usepackage[margin=.6in]{geometry}
+\usepackage{titling}
+\usepackage{titlesec}
+\setlength{\droptitle}{-10em}
+\titlespacing\section{0pt}{2pt plus 2pt minus 2pt}{-5pt plus 2pt minus 2pt}
+\usepackage{enumitem}
+\setlength\parindent{0pt}
+
+\newcommand{\underlinedsection}[1]{ \section*{\sc{#1}}
+	\rule{\textwidth}{1pt} }
+
+\newenvironment{denseitemize}
+{ \begin{itemize}[leftmargin = 20pt, topsep = 0pt, itemsep = 0pt] }
+{\end{itemize} }
+
+\newcommand{\education}[3]{ {\textbf{#1}, {#2} \hfill {#3}} }
+\newcommand{\job}[3]{ {\textbf{#1}, \textit{\textbf{#2}} \hfill {#3}} }
+
+\begin{document}
+\normalsize
+\singlespacing
+
+\section*{\centering \sc{Rishi Lokesh}} 
+\begin{center}
+\rule{3in}{1pt} \\
+\texttt{rishilokesh25@gmail.com} \\
+248-757-7067 
+\end{center} 
+
+\underlinedsection{Skills}
+ C++; Python; Java; Javascript (Typescript); Svelte; Firebase; Linux; SQL; C#; C; HTML; CSS; Git; AWS; NeoVim; Serverless Architecture; Arduino; Computer Aided Design; Failure Mode Error Analysis; Risk Analysis; LaTeX;
+ 
+\underlinedsection{Education}
+\education{University of Michigan College of Engineering}{Ann Arbor, MI}{Est. Graduation 2028}
+
+\begin{denseitemize}
+	\item Pursuing a Bachelor of Science in Computer Science Engineering with a Minor in Physics 
+\end{denseitemize}
+\education{International Academy}{Troy, MI}{2021-2025}
+\begin{denseitemize}
+	\item Graduated Summa Cum Laude through the rigorous International Baccalaureate program 
+        \item Submitted research papers on the use of Graph Theory to optimize electrical grids and studied the impact of propeller pitch on thrust
+        \item Achieved a 1570 on the SAT and was recognized as a National Merit Semi-finalist
+
+\end{denseitemize}
+\underlinedsection{Work Experience}
+
+\job{Argo Print}{Founder/Developer}{  https://print.troyargonauts.org/ \hspace{15pt}}{2022-2025}
+\begin{denseitemize}
+	\item Saved over \$10,000 for local robotics teams and students by providing 3D printing services
+        \item Managed and operated 17 donated 3D printers using Kubernetes, Linux, and custom automation software
+        \item Collaborated with GreenGate3D and PolarFilament, implementing machine learning analysis to reduce overhead costs and plastic waste
+
+\end{denseitemize}
+
+\job{Chick-Fil-A}{Team Member}{2025}
+\begin{denseitemize}
+	\item Delivered efficient, friendly service to customers in a fast-paced environment
+        \item Maintained a 100\% customer satisfaction rating
+
+\end{denseitemize}
+
+\underlinedsection{Other Experience}
+\job{FRC Robotics Team 8728}{Captain}{2021-2025}
+\begin{denseitemize}
+	\item Led CAD design, Java programming, and robot construction, guiding the team to build 150 lb robots for competition
+    \item Developed strategic operations through risk and failure mode analysis to optimize production
+    \item Analyzed data against competing teams to refine game strategies
+    \item Conducted seminars on computer vision and coding best practices, reaching over 2,000 participants
+\end{denseitemize}
+\job{To Teach A Monkey - Education through Technology}{Founder}{2023-Present}
+\begin{denseitemize}
+	\item Developed an IB-focused Learning Management System integrated with AI
+    \item Applied Natural Language Processing and Machine Learning to create a physics problem-solving tool in Python
+\end{denseitemize}
+\underlinedsection{Projects}
+\job{Algorithmic Trading Server}{}{2025}
+\begin{denseitemize}
+	\item Designed a multithreaded C++ server for forex and stock trading
+    \item Utilized perceptrons, numpy, linear regression, web scraping, decision trees, and risk analysis to generate trading strategies
+    \item Deployed strategies in a live trading environment
+\end{denseitemize}
+\job{Newsprint}{}{2025}
+\begin{denseitemize}
+	\item Created a serverless news feed using AWS, Firebase, and Svelte to promote diverse news recommendations
+    \item Employed Natural Language Processing and web scraping to gather and classify news articles with machine learning algorithms
+\end{denseitemize}
+\job{Easyduino}{}{2024}
+\begin{denseitemize}
+	\item Developed a custom microcontroller to teach mechanical, electrical, and computer science concepts to children
+    \item Programmed in C to integrate with the Blocklyduino web interface
+\end{denseitemize}
+
+\end{document}
