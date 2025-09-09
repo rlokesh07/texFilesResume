@@ -1,0 +1,144 @@
+```latex
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\documentclass{article}[11pt]
+% set the font
+\usepackage[T1]{fontenc}
+\usepackage{fouriernc}
+% set spacing for section titling
+\usepackage{setspace}
+% Make sure you can use accents
+\usepackage[spanish]{babel}
+% set the margins
+\usepackage[margin=.6in]{geometry}
+% Adjust title and section spacing
+\usepackage{titling}
+\usepackage{titlesec}
+\setlength{\droptitle}{-10em}
+% before and after sections
+\titlespacing\section{0pt}{2pt plus 2pt minus 2pt}{-5pt plus 2pt minus 2pt}
+% Fix the spacing with itemize
+\usepackage{enumitem}
+% Get rid of indentation
+\setlength\parindent{0pt}
+
+% An underlined section in small caps
+\newcommand{\underlinedsection}[1]{ \section*{\sc{#1}}
+	\rule{\textwidth}{1pt} }
+
+\newenvironment{denseitemize} % a dense list
+{ \begin{itemize}[leftmargin = 20pt, topsep = 0pt, itemsep = 0pt] }
+{\end{itemize} }
+
+% First is where you went to school
+% Second is where the school is
+% third is the time you spent there
+\newcommand{\education}[3]{ {\textbf{#1}, {#2} \hfill {#3}} }
+
+% First is the employer
+% Second is your role
+% Third is the time you spent there
+\newcommand{\job}[3]{ {\textbf{#1}, \textit{\textbf{#2}} \hfill {#3}} }
+
+%----------------------------------------------------------------------------------------
+%	Begin the document
+%----------------------------------------------------------------------------------------
+\begin{document}
+\normalsize
+\singlespacing
+
+%----------------------------------------------------------------------------------------
+%	NAME AND ADDRESS SECTION
+%----------------------------------------------------------------------------------------
+% This part is more hacky than the other stuff because it is only used once
+\section*{\centering \sc{Rishi Lokesh}} 
+\begin{center}
+\rule{3in}{1pt} \\
+\texttt{rishilokesh25@gmail.com} \\
+248-757-7067 
+\end{center} 
+
+%----------------------------------------------------------------------------------------
+%	SKILLS SECTION
+%----------------------------------------------------------------------------------------
+\underlinedsection{Skills}
+ C++; Python; Java; Javascript (Typescript); Svelte; Firebase; Linux; SQL; C#; C; HTML; CSS; Git; AWS; NeoVim; Serverless Architecture; Arduino; Computer Aided Design; Failure Mode and Effect Analysis; Risk Management; LaTeX;
+ 
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\underlinedsection{Education}
+\education{University of Michigan College of Engineering}{Ann Arbor, MI}{Est. Graduation 2028}
+
+\begin{denseitemize}
+	\item Pursuing a Bachelor of Science in Computer Science Engineering with a Minor in Physics
+\end{denseitemize}
+\education{International Academy}{Troy, MI}{2021-2025}
+\begin{denseitemize}
+	\item Graduated Summa Cum Laude through the rigorous International Baccalaureate (IB) program
+        \item Authored research papers on the application of Graph Theory to optimize electrical grid efficiency and resilience
+        \item Conducted research on propeller pitch optimization for thrust enhancement
+        \item Achieved a 1570 SAT score and recognized as a National Merit Semi-finalist
+\end{denseitemize}
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+
+\underlinedsection{Work Experience}
+
+\job{Argo Print}{Founder/Developer}{  \url{https://print.troyargonauts.org/}}{2022-2025}
+\begin{denseitemize}
+	\item Saved over \$10,000 for local robotics teams and students by providing affordable 3D printing services
+        \item Managed and maintained 17 donated 3D printers utilizing Kubernetes, Linux, and custom automation software
+        \item Collaborated with GreenGate3D and PolarFilament, implementing machine learning techniques to reduce operational costs and plastic waste
+\end{denseitemize}
+
+\job{Chick-Fil-A}{Team Member}{2025}
+\begin{denseitemize}
+	\item Delivered efficient, friendly customer service in a fast-paced environment
+        \item Maintained a 100\% customer satisfaction rating through excellent service and teamwork
+\end{denseitemize}
+
+
+
+%----------------------------------------------------------------------------------------
+%	OTHER EXPERIENCE SECTION: VOLUNTEERING ETC. 
+%----------------------------------------------------------------------------------------
+\underlinedsection{Other Experience}
+\job{FRC Robotics Team 8728}{Captain}{2021-2025}
+\begin{denseitemize}
+	\item Led design, programming, and strategy development for 150-lb competitive robots using CAD, Java, and systems engineering principles
+    \item Conducted risk assessments and failure mode analysis to improve robot reliability and performance
+    \item Analyzed match data to optimize game strategies and autonomous routines
+    \item Organized and delivered in-person and virtual seminars on computer vision, coding best practices, and robotics, reaching over 2,000 participants
+\end{denseitemize}
+\job{To Teach A Monkey - Education through Technology}{Founder}{2023-Present}
+\begin{denseitemize}
+	\item Developed an IB-compatible Learning Management System (LMS) integrated with AI and natural language processing
+    \item Created an AI-powered physics problem solver using Python and machine learning techniques
+\end{denseitemize}
+\underlinedsection{Projects}
+\job{Algorithmic Trading Server}{}{2025}
+\begin{denseitemize}
+	\item Designed a multithreaded C++ server optimized for forex and stock trading applications
+    \item Implemented machine learning algorithms including perceptrons, linear regression, decision trees, and risk analysis to generate trading strategies
+    \item Deployed strategies in a real-time trading environment with live data feeds
+\end{denseitemize}
+\job{Newsprint}{}{2025}
+\begin{denseitemize}
+	\item Built a serverless news aggregation platform using AWS, Firebase, and Svelte to deliver personalized news recommendations
+    \item Employed natural language processing and web scraping to collect and categorize news articles using machine learning classifiers
+\end{denseitemize}
+\job{Easyduino}{}{2024}
+\begin{denseitemize}
+	\item Created a custom microcontroller platform to teach mechanical, electrical, and computer science engineering concepts to students
+    \item Developed C firmware to interface with Blocklyduino web-based programming environment
+\end{denseitemize}
+
+%----------------------------------------------------------------------------------------
+
+\thispagestyle{empty}
+\end{document}
+```
