@@ -1,0 +1,143 @@
+\documentclass{article}[11pt]
+% set the font
+\usepackage[T1]{fontenc}
+\usepackage{fouriernc}
+% set spacing for section titling
+\usepackage{setspace}
+% Make sure you can use accents
+\usepackage[spanish]{babel}
+% set the margins
+\usepackage[margin=.6in]{geometry}
+% Adjust title and section spacing
+\usepackage{titling}
+\usepackage{titlesec}
+\setlength{\droptitle}{-10em}
+% before and after sections
+\titlespacing\section{0pt}{2pt plus 2pt minus 2pt}{-5pt plus 2pt minus 2pt}
+% Fix the spacing with itemize
+\usepackage{enumitem}
+% Get rid of indentation
+\setlength\parindent{0pt}
+
+% An underlined section in small caps
+\newcommand{\underlinedsection}[1]{ \section*{\sc{#1}}
+	\rule{\textwidth}{1pt} }
+
+\newenvironment{denseitemize} % a dense list
+{ \begin{itemize}[leftmargin = 20pt, topsep = 0pt, itemsep = 0pt] }
+{\end{itemize} }
+
+% First is where you went to school
+% Second is where the school is
+% third is the time you spent there
+\newcommand{\education}[3]{ {\textbf{#1}, {#2} \hfill {#3}} }
+
+% First is the employer
+% Second is your role
+% Third is the time you spent there
+\newcommand{\job}[3]{ {\textbf{#1}, \textit{\textbf{#2}} \hfill {#3}} }
+
+%----------------------------------------------------------------------------------------
+%	Begin the document
+%----------------------------------------------------------------------------------------
+\begin{document}
+\normalsize
+\singlespacing
+
+%----------------------------------------------------------------------------------------
+%	NAME AND ADDRESS SECTION
+%----------------------------------------------------------------------------------------
+% This part is more hacky than the other stuff because it is only used once
+\section*{\centering \sc{Rishi Lokesh}} 
+\begin{center}
+\rule{3in}{1pt} \\
+\texttt{rishilokesh25@gmail.com} \\
+248-757-7067 
+\end{center} 
+
+%----------------------------------------------------------------------------------------
+%	SKILLS SECTION
+%----------------------------------------------------------------------------------------
+\underlinedsection{Skills}
+ C++; Python; Java; Javascript (Typescript); Svelte; Firebase; Linux; SQL; C#; C; HTML; CSS; Git; AWS; NeoVim; Serverless Architecture; Arduino; Computer Aided Design; Failure Mode Error Analysis; Risk Analysis; LaTeX;
+ 
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\underlinedsection{Education}
+\education{University of Michigan College of Engineering}{Ann Arbor, MI}{Est. Graduation 2028}
+
+\begin{denseitemize}
+	\item Working on BS in Computer Science Engineering and Minor in Physics 
+\end{denseitemize}
+\education{International Academy}{Troy, MI}{2021-2025}
+\begin{denseitemize}
+	\item Graduated Summa Cum Laude through the rigorous International Baccalaureate program 
+        \item Submitted papers on the use of Graph Theory to optimize electrical grids and researched the effect of propeller pitch against thrust
+        \item Scored a 1570 on my SAT and was a National Merit Semi-finalist
+
+\end{denseitemize}
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+
+\underlinedsection{Work experience}
+
+\job{Argo Print}{Founder/Developer}{  https://print.troyargonauts.org/ \hspace{15pt}}{2022-2025}
+\begin{denseitemize}
+	\item Saved over 10,000 dollars for local robotics teams and students by providing 3D printing services
+        \item Maintained and operated 17 donated 3D Printers using Kubernetes, Linux, and custom software
+        \item Worked with GreenGate3D and PolarFilament and ran machine learning analysis to reduce overhead and plastic waste
+
+\end{denseitemize}
+
+\job{Chick-Fil-a}{Team Member}{2025}
+\begin{denseitemize}
+	\item Provided fun, fast service to customers in a high pressure enviroment
+        \item Achieved a 100\% customer satisfaction rating
+
+\end{denseitemize}
+
+
+
+%----------------------------------------------------------------------------------------
+%	OTHER EXPERIENCE SECTION: VOLUNTEERING ETC. 
+%----------------------------------------------------------------------------------------
+\underlinedsection{Other experience}
+\job{FRC Robotics Team 8728}{Captain}{2021-2025}
+\begin{denseitemize}
+	\item Taught computer-aided design, java programming, and robot design to lead my team to making 150 lbs robots to compete with
+    \item Worked on strategy operations to optimize production through risk analysis and failure mode analysis
+    \item Ran data analytics against opposing teams to optimize game strategy
+    \item Held in-person and virtual seminars on computer vision and good coding practices, reaching over 2,000 people
+\end{denseitemize}
+\job{To Teach A Monkey - Education through Technology}{Founder}{2023-Present}
+\begin{denseitemize}
+	\item Created an International Baccalaureate Learning Management System with AI integrations
+    \item Used Natural Language Processing along side ML to create a physics problem solver in Python
+    
+    
+\end{denseitemize}
+\underlinedsection{Projects}
+\job{Algorithmic Trading Server}{}{2025}
+\begin{denseitemize}
+	\item Multithreadded C++ server designed for forex and stock trading 
+    \item Used perceptrons, numpy, linear regression, web scraping, decision trees, and risk analysis to generate strategies
+    \item Implemented strategies in a live trading algorithm  
+\end{denseitemize}
+\job{Newsprint}{}{2025}
+\begin{denseitemize}
+	\item Serverless news feed created using AWS, Firebase, and Svelte to provide nonecho chamber recommendations.
+    \item Used Natural Language Processing alongside a web scraper to find news articles and sort using a machine learning algorithm.
+\end{denseitemize}
+\job{Easyduino}{}{2024}
+\begin{denseitemize}
+	\item Custom microcontroller designed to teach kids mechanical, electrical, and computer science engineering concepts
+    \item Wrote custom C code to integrate with the Blocklyduino web interface
+\end{denseitemize}
+
+%----------------------------------------------------------------------------------------
+
+\thispagestyle{empty}
+\end{document}
